@@ -1,6 +1,7 @@
-import navigation from './navigation';
 import home from './home';
 import menu from './menu';
+import about from './about';
+import './style.css';
 
 const content = document.getElementById('content');
 
@@ -26,11 +27,15 @@ tabList.forEach((tab) => {
 	tabs.appendChild(tab);
 });
 
+tabs.classList.add('navigation');
+
 content.appendChild(tabs);
 
 const main = document.createElement('div');
 main.setAttribute('id', 'main');
 content.appendChild(main);
+
+home();
 
 homeTab.addEventListener('click', () => {
 	main.textContent = '';
@@ -40,4 +45,9 @@ homeTab.addEventListener('click', () => {
 menuTab.addEventListener('click', () => {
 	main.textContent = '';
 	menu();
+});
+
+aboutTab.addEventListener('click', () => {
+	main.textContent = '';
+	about();
 });

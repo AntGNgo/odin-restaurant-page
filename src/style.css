@@ -1,0 +1,10 @@
+body {
+	background-color: black;
+	color: white;
+	width: 60%;
+	margin: 0 auto;
+}
+.navigation {
+	display: flex;
+	gap: 20px;
+}

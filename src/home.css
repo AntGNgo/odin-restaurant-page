@@ -1,0 +1,10 @@
+.sushi-pics {
+	display: flex;
+	gap: 20px;
+}
+
+img {
+	height: 400px;
+	width: auto;
+	flex: 0;
+}
